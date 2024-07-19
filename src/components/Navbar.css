@@ -1,0 +1,115 @@
+.navbar{
+    font-family: monospace;
+    padding: 5px 0;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.navbar-left h1{
+    color: rgb(242, 84, 56);
+    font-size: 40px;
+}
+.navbar-menu{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.navbar-menu a{
+    transition: all 0.5s;
+}
+.navbar-menu a:hover{
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: orange;
+    padding: 10px 25px;
+}
+.navbar .logo{
+    width: 9vh;
+    border-radius: 20px;
+}
+.navbar-right img{
+    width: 5.4vh;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.navbar-right button{
+    background:transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 1s;
+}
+.navbar-right button:hover{
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 2px black;
+}
+.navbar .active{
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(31, 31, 59);
+}
+.nav-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: 5vh;
+    right: 29vh;
+}
+
+@media (max-width:900px){
+    .navbar .logo {
+        width: 30px;
+    }
+    .navbar-left h1{
+        font-size: 4vh;
+        margin: 0;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 15px;
+    }
+    .navbar-left{
+        gap: 10px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+    .nav-search-icon .dot{
+        right: 13.8vh;
+        top: 2.4vh;
+        min-width: 5px;
+        min-height: 5px;
+    }
+}
+@media (max-width:750px){
+    .navbar-menu{
+        display: none;
+    }
+}

@@ -1,0 +1,75 @@
+.explore-menu{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+.explore-menu h2{
+    color: black;
+    font-weight: bolder;
+    font-size: 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.explore-menutxt{
+    columns: #060606;
+}
+.explore-menulst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 10px 10px;
+    overflow-x: scroll;
+}
+.explore-menulst::-webkit-scrollbar{
+    display: none;
+}
+.explore-menulst img{
+    width: 8.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.explore-menulstit{
+    margin: 10px 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.4s;
+}
+.explore-menu hr{
+    margin: 15px 0;
+    height: 2px;
+    background-color: rgba(72, 67, 67, 0.203);
+    border: none;
+}
+.explore-menulstit .active{
+    box-shadow: 0 0 15px tomato;
+}
+@media(max-width:1050px){
+    .explore-menutxt{
+        width: 100%;
+        font-size: 20px;
+    }
+    .explore-menu h2{
+        width: 100%;
+        font-size: 35px;
+        margin-top: 5vh;
+    }
+    .explore-menulst{
+        width: 101%;
+    }
+    .explore-menulst img{
+        width: 15vh;
+    }
+    .explore-menulst p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
